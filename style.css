@@ -1,0 +1,58 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Caixa principal */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+/* Título animado */
+.titulo {
+  font-size: 2em;
+  animation: aparecer 2s ease-in-out infinite alternate;
+}
+
+/* Botão */
+button {
+  background-color: #fff;
+  color: #2575fc;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #2575fc;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Animação */
+@keyframes aparecer {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
